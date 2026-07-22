@@ -226,6 +226,79 @@ section {
     color: var(--text-color);
 }
 
+/* Experience Section */
+.experience {
+    background: white;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 1.5rem;
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--primary-color);
+}
+
+.timeline-icon {
+    flex-shrink: 0;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.timeline-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.timeline-header h3 {
+    color: var(--dark-color);
+    font-size: 1.3rem;
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.timeline-company {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+.timeline-divider {
+    color: var(--text-color);
+    opacity: 0.5;
+    margin: 0 0.3rem;
+}
+
+.timeline-description {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
 /* Skills Section */
 .skills-grid {
     display: grid;
@@ -509,5 +582,9 @@ section {
     
     .section-title {
         font-size: 2rem;
+    }
+
+    .timeline-item {
+        flex-direction: column;
     }
 }

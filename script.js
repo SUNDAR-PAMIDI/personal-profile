@@ -1,7 +1,9 @@
+
+// Script · JS
 // Mobile Navigation Toggle
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
-
+ 
 burger.addEventListener('click', () => {
     nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
     if (nav.style.display === 'flex') {
@@ -15,7 +17,7 @@ burger.addEventListener('click', () => {
         nav.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
     }
 });
-
+ 
 // Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -32,10 +34,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
+ 
 // Animate Skill Bars on Scroll
 const skillBars = document.querySelectorAll('.skill-progress');
-
+ 
 const animateSkillBars = () => {
     skillBars.forEach(bar => {
         const position = bar.getBoundingClientRect().top;
@@ -47,12 +49,12 @@ const animateSkillBars = () => {
         }
     });
 };
-
+ 
 window.addEventListener('scroll', animateSkillBars);
-
+ 
 // Animate Numbers on Scroll
 const statNumbers = document.querySelectorAll('.stat-number');
-
+ 
 const animateStatNumbers = () => {
     statNumbers.forEach(num => {
         const position = num.getBoundingClientRect().top;
@@ -78,12 +80,12 @@ const animateStatNumbers = () => {
         }
     });
 };
-
+ 
 window.addEventListener('scroll', animateStatNumbers);
-
+ 
 // Form Submission
 const contactForm = document.getElementById('contactForm');
-
+ 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     
@@ -93,7 +95,7 @@ contactForm.addEventListener('submit', (e) => {
     alert(`Thank you ${name}! Your message has been received. I'll get back to you at ${email} soon!`);
     contactForm.reset();
 });
-
+ 
 // Navbar scroll effect
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
@@ -103,7 +105,7 @@ window.addEventListener('scroll', () => {
         navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
     }
 });
-
+ 
 // Trigger animations on page load
 window.addEventListener('load', () => {
     setTimeout(() => {
@@ -111,3 +113,4 @@ window.addEventListener('load', () => {
         animateStatNumbers();
     }, 300);
 });
+ 
